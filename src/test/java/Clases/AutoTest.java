@@ -2,6 +2,7 @@ package Clases;
 
 import Clases.Utils.Constans;
 import Clases.Utils.ConstansMarca;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.MockitoAnnotations;
@@ -64,5 +65,6 @@ Direccion direccion;
 
     @Test
     void calcularAutonomia() {
+        assertEquals(28000.0/30.0, auto.calcularAutonomia(30.0));
     }
 }
